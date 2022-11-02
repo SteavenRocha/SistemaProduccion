@@ -63,7 +63,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(155, 71);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 20);
+            this.textBox1.Size = new System.Drawing.Size(89, 20);
             this.textBox1.TabIndex = 3;
             // 
             // label3
@@ -79,7 +79,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(155, 126);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 20);
+            this.textBox2.Size = new System.Drawing.Size(89, 20);
             this.textBox2.TabIndex = 5;
             // 
             // label4
@@ -135,7 +135,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form2
+            // FormOrdenNuevoPlano
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -151,7 +151,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.Name = "FormOrdenNuevoPlano";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);

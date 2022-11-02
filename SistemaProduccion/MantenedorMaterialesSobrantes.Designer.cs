@@ -54,7 +54,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(218, 79);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(107, 20);
+            this.textBox1.Size = new System.Drawing.Size(91, 20);
             this.textBox1.TabIndex = 21;
             // 
             // label2
@@ -86,7 +86,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(218, 189);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(107, 20);
+            this.textBox2.Size = new System.Drawing.Size(91, 20);
             this.textBox2.TabIndex = 25;
             // 
             // label3
@@ -111,7 +111,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(508, 189);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(107, 20);
+            this.textBox3.Size = new System.Drawing.Size(88, 20);
             this.textBox3.TabIndex = 27;
             // 
             // button2
@@ -132,7 +132,7 @@
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Form9
+            // MantenedorMaterialesSobrantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,7 +148,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form9";
+            this.Name = "MantenedorMaterialesSobrantes";
             this.Text = "Form9";
             this.ResumeLayout(false);
             this.PerformLayout();

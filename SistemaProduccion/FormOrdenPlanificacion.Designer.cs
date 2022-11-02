@@ -54,7 +54,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(140, 65);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 20);
+            this.textBox1.Size = new System.Drawing.Size(98, 20);
             this.textBox1.TabIndex = 12;
             // 
             // label2
@@ -86,7 +86,7 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(140, 213);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 20);
+            this.textBox7.Size = new System.Drawing.Size(98, 20);
             this.textBox7.TabIndex = 20;
             this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
@@ -136,7 +136,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form4
+            // FormOrdenPlanificacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -152,7 +152,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form4";
+            this.Name = "FormOrdenPlanificacion";
             this.Text = "Form4";
             this.ResumeLayout(false);
             this.PerformLayout();

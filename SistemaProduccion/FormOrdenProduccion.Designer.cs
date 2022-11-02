@@ -56,7 +56,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(215, 67);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(107, 20);
+            this.textBox2.Size = new System.Drawing.Size(81, 20);
             this.textBox2.TabIndex = 7;
             // 
             // label3
@@ -81,7 +81,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(215, 115);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(107, 20);
+            this.textBox1.Size = new System.Drawing.Size(81, 20);
             this.textBox1.TabIndex = 9;
             // 
             // label4
@@ -97,7 +97,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(215, 161);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(107, 20);
+            this.textBox3.Size = new System.Drawing.Size(81, 20);
             this.textBox3.TabIndex = 11;
             // 
             // label5
@@ -113,7 +113,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(215, 208);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(107, 20);
+            this.textBox4.Size = new System.Drawing.Size(81, 20);
             this.textBox4.TabIndex = 13;
             // 
             // dateTimePicker1
@@ -150,7 +150,7 @@
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Form7
+            // FormOrdenProduccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -168,7 +168,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Name = "Form7";
+            this.Name = "FormOrdenProduccion";
             this.Text = "Form7";
             this.ResumeLayout(false);
             this.PerformLayout();

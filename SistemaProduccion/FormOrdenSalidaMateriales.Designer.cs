@@ -54,7 +54,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(222, 75);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(107, 20);
+            this.textBox3.Size = new System.Drawing.Size(82, 20);
             this.textBox3.TabIndex = 13;
             // 
             // label4
@@ -95,7 +95,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(222, 187);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(107, 20);
+            this.textBox1.Size = new System.Drawing.Size(82, 20);
             this.textBox1.TabIndex = 19;
             // 
             // label3
@@ -111,7 +111,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(222, 237);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(107, 20);
+            this.textBox2.Size = new System.Drawing.Size(82, 20);
             this.textBox2.TabIndex = 21;
             // 
             // button2
@@ -132,7 +132,7 @@
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Form8
+            // FormOrdenSalidaMateriales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,7 +148,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Name = "Form8";
+            this.Name = "FormOrdenSalidaMateriales";
             this.Text = "Form8";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -62,7 +62,7 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(155, 74);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 20);
+            this.textBox7.Size = new System.Drawing.Size(103, 20);
             this.textBox7.TabIndex = 22;
             // 
             // label10
@@ -146,7 +146,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(197, 313);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 20);
+            this.textBox2.Size = new System.Drawing.Size(95, 20);
             this.textBox2.TabIndex = 32;
             // 
             // label4
@@ -219,10 +219,10 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(155, 124);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 20);
+            this.textBox1.Size = new System.Drawing.Size(103, 20);
             this.textBox1.TabIndex = 39;
             // 
-            // Form6
+            // MantenedorHorarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -246,7 +246,7 @@
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label1);
-            this.Name = "Form6";
+            this.Name = "MantenedorHorarios";
             this.Text = "Form6";
             this.ResumeLayout(false);
             this.PerformLayout();
