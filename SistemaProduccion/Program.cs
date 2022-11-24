@@ -16,7 +16,7 @@ namespace SistemaProduccion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MantenedorClientes());
+            Application.Run(new MantenedorTipoPlano());
         }
     }
 }

@@ -205,6 +205,10 @@ namespace SistemaProduccion
             listarCliente();
         }
 
+        private void grupBoxDatos_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

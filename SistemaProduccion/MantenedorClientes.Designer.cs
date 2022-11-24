@@ -272,7 +272,8 @@
             this.grupBoxDatos.Size = new System.Drawing.Size(640, 133);
             this.grupBoxDatos.TabIndex = 35;
             this.grupBoxDatos.TabStop = false;
-            this.grupBoxDatos.Text = "groupBox1";
+            this.grupBoxDatos.Text = "Datos Cliente";
+            this.grupBoxDatos.Enter += new System.EventHandler(this.grupBoxDatos_Enter);
             // 
             // MantenedorClientes
             // 
