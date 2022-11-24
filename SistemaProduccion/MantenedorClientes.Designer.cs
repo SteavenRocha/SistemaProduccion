@@ -160,7 +160,7 @@
             // cbEstadoCliente
             // 
             this.cbEstadoCliente.AutoSize = true;
-            this.cbEstadoCliente.Location = new System.Drawing.Point(364, 19);
+            this.cbEstadoCliente.Location = new System.Drawing.Point(364, 21);
             this.cbEstadoCliente.Name = "cbEstadoCliente";
             this.cbEstadoCliente.Size = new System.Drawing.Size(58, 17);
             this.cbEstadoCliente.TabIndex = 25;
