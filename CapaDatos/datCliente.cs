@@ -132,10 +132,10 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spDesabilitaCliente", cn);
+                cmd = new SqlCommand("spDeshabilitaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@idCliente", Cli.idCliente);
-                cmd.Parameters.AddWithValue("@estadoCliente", Cli.estadoCliente);
+              //  cmd.Parameters.AddWithValue("@estadoCliente", Cli.estadoCliente);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
