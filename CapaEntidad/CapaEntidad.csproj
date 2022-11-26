@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="entCategoriaMueble.cs" />
     <Compile Include="entCliente.cs" />
+    <Compile Include="entMueble.cs" />
     <Compile Include="entTipoPlano.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

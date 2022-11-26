@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="logCategoriaMueble.cs" />
     <Compile Include="logCliente.cs" />
+    <Compile Include="logMueble.cs" />
     <Compile Include="LogTipoPlano.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

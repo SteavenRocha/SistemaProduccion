@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvCliente = new System.Windows.Forms.DataGridView();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtidCliente = new System.Windows.Forms.TextBox();
-            this.txtDNICliente = new System.Windows.Forms.TextBox();
+            this.txtIDmueble = new System.Windows.Forms.TextBox();
+            this.txtIDsupervisor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNTelefono = new System.Windows.Forms.TextBox();
+            this.txtIDordenProduccion = new System.Windows.Forms.TextBox();
             this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.grupBoxDatos = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbxCatMueble = new System.Windows.Forms.ComboBox();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.grupBoxDatos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvCliente
+            // dgvDatos
             // 
-            this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCliente.Location = new System.Drawing.Point(12, 25);
-            this.dgvCliente.Name = "dgvCliente";
-            this.dgvCliente.Size = new System.Drawing.Size(271, 150);
-            this.dgvCliente.TabIndex = 44;
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.Location = new System.Drawing.Point(12, 25);
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.Size = new System.Drawing.Size(271, 150);
+            this.dgvDatos.TabIndex = 44;
             // 
             // btnCancelar
             // 
@@ -94,19 +94,19 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "ID Supervisor";
             // 
-            // txtidCliente
+            // txtIDmueble
             // 
-            this.txtidCliente.Location = new System.Drawing.Point(128, 25);
-            this.txtidCliente.Name = "txtidCliente";
-            this.txtidCliente.Size = new System.Drawing.Size(58, 20);
-            this.txtidCliente.TabIndex = 33;
+            this.txtIDmueble.Location = new System.Drawing.Point(128, 25);
+            this.txtIDmueble.Name = "txtIDmueble";
+            this.txtIDmueble.Size = new System.Drawing.Size(58, 20);
+            this.txtIDmueble.TabIndex = 33;
             // 
-            // txtDNICliente
+            // txtIDsupervisor
             // 
-            this.txtDNICliente.Location = new System.Drawing.Point(128, 56);
-            this.txtDNICliente.Name = "txtDNICliente";
-            this.txtDNICliente.Size = new System.Drawing.Size(143, 20);
-            this.txtDNICliente.TabIndex = 8;
+            this.txtIDsupervisor.Location = new System.Drawing.Point(128, 56);
+            this.txtIDsupervisor.Name = "txtIDsupervisor";
+            this.txtIDsupervisor.Size = new System.Drawing.Size(143, 20);
+            this.txtIDsupervisor.TabIndex = 8;
             // 
             // label2
             // 
@@ -117,12 +117,12 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "ID Orden Produccion";
             // 
-            // txtNTelefono
+            // txtIDordenProduccion
             // 
-            this.txtNTelefono.Location = new System.Drawing.Point(128, 88);
-            this.txtNTelefono.Name = "txtNTelefono";
-            this.txtNTelefono.Size = new System.Drawing.Size(143, 20);
-            this.txtNTelefono.TabIndex = 19;
+            this.txtIDordenProduccion.Location = new System.Drawing.Point(128, 88);
+            this.txtIDordenProduccion.Name = "txtIDordenProduccion";
+            this.txtIDordenProduccion.Size = new System.Drawing.Size(143, 20);
+            this.txtIDordenProduccion.TabIndex = 19;
             // 
             // btnDeshabilitar
             // 
@@ -156,20 +156,20 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(15, 122);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.Size = new System.Drawing.Size(87, 13);
             this.label4.TabIndex = 20;
-            this.label4.Text = "Tipo Plano";
+            this.label4.Text = "CategoriaMueble";
             // 
             // grupBoxDatos
             // 
-            this.grupBoxDatos.Controls.Add(this.comboBox1);
+            this.grupBoxDatos.Controls.Add(this.cbxCatMueble);
             this.grupBoxDatos.Controls.Add(this.btnCancelar);
             this.grupBoxDatos.Controls.Add(this.label7);
             this.grupBoxDatos.Controls.Add(this.label3);
-            this.grupBoxDatos.Controls.Add(this.txtidCliente);
-            this.grupBoxDatos.Controls.Add(this.txtDNICliente);
+            this.grupBoxDatos.Controls.Add(this.txtIDmueble);
+            this.grupBoxDatos.Controls.Add(this.txtIDsupervisor);
             this.grupBoxDatos.Controls.Add(this.label2);
-            this.grupBoxDatos.Controls.Add(this.txtNTelefono);
+            this.grupBoxDatos.Controls.Add(this.txtIDordenProduccion);
             this.grupBoxDatos.Controls.Add(this.btnModificar);
             this.grupBoxDatos.Controls.Add(this.label4);
             this.grupBoxDatos.Controls.Add(this.btnAgregar);
@@ -180,13 +180,13 @@
             this.grupBoxDatos.TabStop = false;
             this.grupBoxDatos.Text = "Datos Mueble";
             // 
-            // comboBox1
+            // cbxCatMueble
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(128, 119);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(143, 21);
-            this.comboBox1.TabIndex = 34;
+            this.cbxCatMueble.FormattingEnabled = true;
+            this.cbxCatMueble.Location = new System.Drawing.Point(128, 119);
+            this.cbxCatMueble.Name = "cbxCatMueble";
+            this.cbxCatMueble.Size = new System.Drawing.Size(143, 21);
+            this.cbxCatMueble.TabIndex = 34;
             // 
             // btnModificar
             // 
@@ -220,7 +220,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(402, 450);
-            this.Controls.Add(this.dgvCliente);
+            this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnDeshabilitar);
             this.Controls.Add(this.btnNuevo);
@@ -229,7 +229,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MantenedorMuebles";
             this.Text = "MantenedorMuebles";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.grupBoxDatos.ResumeLayout(false);
             this.grupBoxDatos.PerformLayout();
             this.ResumeLayout(false);
@@ -239,15 +239,15 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvCliente;
+        private System.Windows.Forms.DataGridView dgvDatos;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtidCliente;
-        private System.Windows.Forms.TextBox txtDNICliente;
+        private System.Windows.Forms.TextBox txtIDmueble;
+        private System.Windows.Forms.TextBox txtIDsupervisor;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNTelefono;
+        private System.Windows.Forms.TextBox txtIDordenProduccion;
         private System.Windows.Forms.Button btnDeshabilitar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnEditar;
@@ -256,6 +256,6 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxCatMueble;
     }
 }

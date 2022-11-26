@@ -38,12 +38,12 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.grupBoxDatos = new System.Windows.Forms.GroupBox();
+            this.cbxCategoriaMueble = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtIDCategoriaMueble = new System.Windows.Forms.TextBox();
             this.txtNombreCategoria = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbxCategoriaMueble = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoriaMueble)).BeginInit();
             this.grupBoxDatos.SuspendLayout();
             this.SuspendLayout();
@@ -53,44 +53,49 @@
             this.dgvCategoriaMueble.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCategoriaMueble.Location = new System.Drawing.Point(12, 25);
             this.dgvCategoriaMueble.Name = "dgvCategoriaMueble";
-            this.dgvCategoriaMueble.Size = new System.Drawing.Size(196, 150);
+            this.dgvCategoriaMueble.Size = new System.Drawing.Size(339, 150);
             this.dgvCategoriaMueble.TabIndex = 51;
+            this.dgvCategoriaMueble.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoriaMueble_CellClick);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(214, 130);
+            this.btnSalir.Location = new System.Drawing.Point(357, 143);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 50;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnDeshabilitar
             // 
-            this.btnDeshabilitar.Location = new System.Drawing.Point(214, 83);
+            this.btnDeshabilitar.Location = new System.Drawing.Point(357, 95);
             this.btnDeshabilitar.Name = "btnDeshabilitar";
             this.btnDeshabilitar.Size = new System.Drawing.Size(75, 23);
             this.btnDeshabilitar.TabIndex = 49;
             this.btnDeshabilitar.Text = "Deshabilitar";
             this.btnDeshabilitar.UseVisualStyleBackColor = true;
+            this.btnDeshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(214, 25);
+            this.btnNuevo.Location = new System.Drawing.Point(357, 37);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 23);
             this.btnNuevo.TabIndex = 48;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(214, 54);
+            this.btnEditar.Location = new System.Drawing.Point(357, 66);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
             this.btnEditar.TabIndex = 47;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // label1
             // 
@@ -103,30 +108,33 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(286, 90);
+            this.btnCancelar.Location = new System.Drawing.Point(342, 76);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 43;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(286, 58);
+            this.btnModificar.Location = new System.Drawing.Point(342, 47);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
             this.btnModificar.TabIndex = 42;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(286, 28);
+            this.btnAgregar.Location = new System.Drawing.Point(342, 18);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 41;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // grupBoxDatos
             // 
@@ -137,14 +145,23 @@
             this.grupBoxDatos.Controls.Add(this.txtIDCategoriaMueble);
             this.grupBoxDatos.Controls.Add(this.txtNombreCategoria);
             this.grupBoxDatos.Controls.Add(this.label2);
-            this.grupBoxDatos.Controls.Add(this.btnModificar);
             this.grupBoxDatos.Controls.Add(this.btnAgregar);
-            this.grupBoxDatos.Location = new System.Drawing.Point(295, 25);
+            this.grupBoxDatos.Controls.Add(this.btnModificar);
+            this.grupBoxDatos.Location = new System.Drawing.Point(15, 182);
             this.grupBoxDatos.Name = "grupBoxDatos";
-            this.grupBoxDatos.Size = new System.Drawing.Size(373, 150);
+            this.grupBoxDatos.Size = new System.Drawing.Size(430, 150);
             this.grupBoxDatos.TabIndex = 52;
             this.grupBoxDatos.TabStop = false;
             this.grupBoxDatos.Text = "Datos Categoria Mueble";
+            // 
+            // cbxCategoriaMueble
+            // 
+            this.cbxCategoriaMueble.AutoSize = true;
+            this.cbxCategoriaMueble.Location = new System.Drawing.Point(128, 90);
+            this.cbxCategoriaMueble.Name = "cbxCategoriaMueble";
+            this.cbxCategoriaMueble.Size = new System.Drawing.Size(15, 14);
+            this.cbxCategoriaMueble.TabIndex = 44;
+            this.cbxCategoriaMueble.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -187,20 +204,11 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "Estado";
             // 
-            // cbxCategoriaMueble
-            // 
-            this.cbxCategoriaMueble.AutoSize = true;
-            this.cbxCategoriaMueble.Location = new System.Drawing.Point(128, 90);
-            this.cbxCategoriaMueble.Name = "cbxCategoriaMueble";
-            this.cbxCategoriaMueble.Size = new System.Drawing.Size(15, 14);
-            this.cbxCategoriaMueble.TabIndex = 44;
-            this.cbxCategoriaMueble.UseVisualStyleBackColor = true;
-            // 
             // MantenedorCategoriaMueble
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 189);
+            this.ClientSize = new System.Drawing.Size(444, 344);
             this.Controls.Add(this.dgvCategoriaMueble);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnDeshabilitar);
