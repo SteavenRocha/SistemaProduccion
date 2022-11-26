@@ -219,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 450);
+            this.ClientSize = new System.Drawing.Size(402, 450);
             this.Controls.Add(this.dgvCliente);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnDeshabilitar);

@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="entCategoriaMueble.cs" />
     <Compile Include="entCliente.cs" />
     <Compile Include="entTipoPlano.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MantenedorCategoriaMueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorCategoriaMueble.Designer.cs">
+      <DependentUpon>MantenedorCategoriaMueble.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MantenedorCategoriaMueble.resx">
+      <DependentUpon>MantenedorCategoriaMueble.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorClientes.resx">
       <DependentUpon>MantenedorClientes.cs</DependentUpon>
     </EmbeddedResource>

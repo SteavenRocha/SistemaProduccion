@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="logCategoriaMueble.cs" />
     <Compile Include="logCliente.cs" />
     <Compile Include="LogTipoPlano.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
