@@ -40,8 +40,9 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entTipoPlano LisTP = new entTipoPlano();
-                    LisTP.IDtipoPlano = Convert.ToInt32(dr["IDtipoPlano"]);
-                    LisTP.descripcionTipoPlano = dr["descripcionTipoPlano"].ToString();
+                    LisTP.TipoPlanoID = Convert.ToInt32(dr["TipoPlanoID"]);
+                    LisTP.DescripcionPlano = dr["DescripcionPlano"].ToString();
+                    LisTP.estaTipoPlano = Convert.ToBoolean(dr["estaTipoPlano"]);
                     lista.Add(LisTP);
                 }
 
@@ -66,7 +67,8 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertaTipoPlano", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@descripcionTipoPlano", LisTP.descripcionTipoPlano);
+                cmd.Parameters.AddWithValue("@DescripcionPlano", LisTP.DescripcionPlano);
+                cmd.Parameters.AddWithValue("@estaTipoPlano", LisTP.estaTipoPlano);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -91,10 +93,11 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEditaListaPlano", cn);
+                cmd = new SqlCommand("spEditaTipoPlano", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IDtipoPlano", LisTP.IDtipoPlano);
-                cmd.Parameters.AddWithValue("@descripcionTipoPlano", LisTP.descripcionTipoPlano);
+                cmd.Parameters.AddWithValue("@TipoPlanoID", LisTP.TipoPlanoID);
+                cmd.Parameters.AddWithValue("@DescripcionPlano", LisTP.DescripcionPlano);
+                cmd.Parameters.AddWithValue("@estaTipoPlano", LisTP.estaTipoPlano);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -108,6 +111,33 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return edita;
+        }
+        //deshabilita
+
+        public Boolean DeshabilitarTipoPlano(entTipoPlano Cli)
+        {
+            SqlCommand cmd = null;
+            Boolean delete = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spDeshabilitaTipoPlano", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@TipoPlanoID", Cli.TipoPlanoID);
+                //  cmd.Parameters.AddWithValue("@estadoCliente", Cli.estadoCliente);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    delete = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return delete;
         }
 
         #endregion metodos

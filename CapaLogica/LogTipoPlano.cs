@@ -41,12 +41,13 @@ namespace CapaLogica
         {
             datTipoPlano.Instancia.EditarTipoPlano(LisTP);
         }
-        /*public void DeshabilitarTipoPlano(entTipoPlano LisTP)
+
+        public void DeshabilitarTipoPlano(entTipoPlano LisTP)
         {
             datTipoPlano.Instancia.DeshabilitarTipoPlano(LisTP);
-        }*/
-        #endregion metodos
+        }
 
+        #endregion metodos
 
     }
 }

@@ -30,7 +30,6 @@ namespace SistemaProduccion
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             grupBoxTipoPlanos.Enabled = true;
-
             btnAgregar.Visible = true;
             LimpiarVariables();
             btnModificar.Visible = false;
@@ -49,8 +48,8 @@ namespace SistemaProduccion
             try
             {
                 entTipoPlano c = new entTipoPlano();
-                c.descripcionTipoPlano = txtDescripcion.Text.Trim();
-
+                c.DescripcionPlano = txtDescripcion.Text.Trim();
+                c.estaTipoPlano = cbxTipoPlano.Checked;
                 LogTipoPlano.Instancia.InsertaTipoPlano(c);
             }
             catch (Exception ex)
@@ -64,7 +63,9 @@ namespace SistemaProduccion
 
         private void LimpiarVariables()
         {
+            txtIDtipoPlano.Text = "";
             txtDescripcion.Text = " ";
+            cbxTipoPlano.Checked = false;
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -72,8 +73,9 @@ namespace SistemaProduccion
             try
             {
                 entTipoPlano c = new entTipoPlano();
-                c.IDtipoPlano = int.Parse(txtIDtipoPlano.Text.Trim());
-                c.descripcionTipoPlano = txtDescripcion.Text.Trim();
+                c.TipoPlanoID = int.Parse(txtIDtipoPlano.Text.Trim());
+                c.DescripcionPlano = txtDescripcion.Text.Trim();
+                c.estaTipoPlano = cbxTipoPlano.Checked;
                 LogTipoPlano.Instancia.EditaTipoPlano(c);
             }
             catch (Exception ex)
@@ -90,6 +92,37 @@ namespace SistemaProduccion
             DataGridViewRow filaActual = dgvTipoPlano.Rows[e.RowIndex]; //
             txtIDtipoPlano.Text = filaActual.Cells[0].Value.ToString();
             txtDescripcion.Text = filaActual.Cells[1].Value.ToString();
+            cbxTipoPlano.Checked = Convert.ToBoolean(filaActual.Cells[2].Value);
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnDeshabilitar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entTipoPlano c = new entTipoPlano();
+
+                c.TipoPlanoID = int.Parse(txtIDtipoPlano.Text.Trim());
+                cbxTipoPlano.Checked = false;
+                c.estaTipoPlano = cbxTipoPlano.Checked;
+                LogTipoPlano.Instancia.DeshabilitarTipoPlano(c);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+            grupBoxTipoPlanos.Enabled = false;
+            listarTipoPlano();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            grupBoxTipoPlanos.Enabled = false;
         }
     }
 }

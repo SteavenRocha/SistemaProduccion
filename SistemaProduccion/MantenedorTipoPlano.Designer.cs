@@ -42,6 +42,8 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.grupBoxTipoPlanos = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbxTipoPlano = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTipoPlano)).BeginInit();
             this.grupBoxTipoPlanos.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +56,7 @@
             this.btnSalir.TabIndex = 50;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnDeshabilitar
             // 
@@ -63,6 +66,7 @@
             this.btnDeshabilitar.TabIndex = 49;
             this.btnDeshabilitar.Text = "Deshabilitar";
             this.btnDeshabilitar.UseVisualStyleBackColor = true;
+            this.btnDeshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
             // 
             // btnNuevo
             // 
@@ -82,6 +86,7 @@
             this.btnCancelar.TabIndex = 43;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label7
             // 
@@ -156,6 +161,8 @@
             // 
             // grupBoxTipoPlanos
             // 
+            this.grupBoxTipoPlanos.Controls.Add(this.cbxTipoPlano);
+            this.grupBoxTipoPlanos.Controls.Add(this.label2);
             this.grupBoxTipoPlanos.Controls.Add(this.btnCancelar);
             this.grupBoxTipoPlanos.Controls.Add(this.label7);
             this.grupBoxTipoPlanos.Controls.Add(this.txtIDtipoPlano);
@@ -165,7 +172,7 @@
             this.grupBoxTipoPlanos.Controls.Add(this.btnAgregar);
             this.grupBoxTipoPlanos.Location = new System.Drawing.Point(12, 198);
             this.grupBoxTipoPlanos.Name = "grupBoxTipoPlanos";
-            this.grupBoxTipoPlanos.Size = new System.Drawing.Size(392, 109);
+            this.grupBoxTipoPlanos.Size = new System.Drawing.Size(392, 124);
             this.grupBoxTipoPlanos.TabIndex = 52;
             this.grupBoxTipoPlanos.TabStop = false;
             this.grupBoxTipoPlanos.Text = "Datos del Plano";
@@ -179,11 +186,29 @@
             this.label1.TabIndex = 46;
             this.label1.Text = "MANTENEDOR TIPOS PLANOS";
             // 
+            // cbxTipoPlano
+            // 
+            this.cbxTipoPlano.AutoSize = true;
+            this.cbxTipoPlano.Location = new System.Drawing.Point(128, 93);
+            this.cbxTipoPlano.Name = "cbxTipoPlano";
+            this.cbxTipoPlano.Size = new System.Drawing.Size(15, 14);
+            this.cbxTipoPlano.TabIndex = 46;
+            this.cbxTipoPlano.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "Estado";
+            // 
             // MantenedorTipoPlano
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 311);
+            this.ClientSize = new System.Drawing.Size(403, 329);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnDeshabilitar);
             this.Controls.Add(this.btnNuevo);
@@ -217,5 +242,7 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.GroupBox grupBoxTipoPlanos;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox cbxTipoPlano;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -47,6 +47,7 @@
     <Compile Include="logMueble.cs" />
     <Compile Include="logNombreCliente.cs" />
     <Compile Include="logOrdenPlano.cs" />
+    <Compile Include="LogPlanos.cs" />
     <Compile Include="logReqCliente.cs" />
     <Compile Include="logRequerimientosClientes.cs" />
     <Compile Include="LogTipoPlano.cs" />

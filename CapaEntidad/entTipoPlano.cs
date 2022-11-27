@@ -8,7 +8,8 @@ namespace CapaEntidad
 {
     public class entTipoPlano
     {
-        public int IDtipoPlano { get; set; }
-        public string descripcionTipoPlano { get; set; }
+        public int TipoPlanoID { get; set; }
+        public string DescripcionPlano { get; set; }
+        public Boolean estaTipoPlano { get; set; }
     }
 }

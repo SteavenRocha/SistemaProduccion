@@ -65,6 +65,12 @@
     <Compile Include="MantenedorMuebles.Designer.cs">
       <DependentUpon>MantenedorMuebles.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorPlano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorPlano.Designer.cs">
+      <DependentUpon>MantenedorPlano.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorTipoPlano.cs">
       <SubType>Form</SubType>
     </Compile>
