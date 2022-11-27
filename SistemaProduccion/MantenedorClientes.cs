@@ -27,72 +27,6 @@ namespace SistemaProduccion
             dgvCliente.DataSource = logCliente.Instancia.ListarCliente();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MantenedorClientes_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNTelefono_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtDNICliente_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNombres_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void idCliente_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             grupBoxDatos.Enabled = true;
@@ -111,7 +45,7 @@ namespace SistemaProduccion
                 c.DNICliente = txtDNICliente.Text.Trim();
                 c.Ntelefono = txtNTelefono.Text.Trim();
                 c.fecRegCliente = dtpFecha.Value;
-                c.nombresCompletos = txtNTelefono.Text.Trim();
+                c.nombresCompletos = txtNombres.Text.Trim();
                 c.estadoCliente = cbEstadoCliente.Checked;
                 logCliente.Instancia.InsertaCliente(c);
             }
@@ -129,6 +63,7 @@ namespace SistemaProduccion
             txtDNICliente.Text = "";
             txtNTelefono.Text = " ";
             txtNombres.Text = " ";
+            txtidCliente.Text = " ";
             //cbkEstadoCliente.Checked = false;
 
         }

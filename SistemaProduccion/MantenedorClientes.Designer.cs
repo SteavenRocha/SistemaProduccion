@@ -62,7 +62,6 @@
             this.label1.Size = new System.Drawing.Size(139, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "MANTENEDOR CLIENTES";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -79,7 +78,6 @@
             this.txtDNICliente.Name = "txtDNICliente";
             this.txtDNICliente.Size = new System.Drawing.Size(143, 20);
             this.txtDNICliente.TabIndex = 8;
-            this.txtDNICliente.TextChanged += new System.EventHandler(this.txtDNICliente_TextChanged);
             // 
             // dtpFecha
             // 
@@ -87,7 +85,6 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(209, 20);
             this.dtpFecha.TabIndex = 17;
-            this.dtpFecha.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label6
             // 
@@ -97,7 +94,6 @@
             this.label6.Size = new System.Drawing.Size(79, 13);
             this.label6.TabIndex = 16;
             this.label6.Text = "Fecha Registro";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label2
             // 
@@ -107,7 +103,6 @@
             this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 18;
             this.label2.Text = "Nro Telefono";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtNTelefono
             // 
@@ -115,7 +110,6 @@
             this.txtNTelefono.Name = "txtNTelefono";
             this.txtNTelefono.Size = new System.Drawing.Size(143, 20);
             this.txtNTelefono.TabIndex = 19;
-            this.txtNTelefono.TextChanged += new System.EventHandler(this.txtNTelefono_TextChanged);
             // 
             // label4
             // 
@@ -125,7 +119,6 @@
             this.label4.Size = new System.Drawing.Size(101, 13);
             this.label4.TabIndex = 20;
             this.label4.Text = "Nombres Completos";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnNuevo
             // 
@@ -155,7 +148,6 @@
             this.label5.Size = new System.Drawing.Size(75, 13);
             this.label5.TabIndex = 24;
             this.label5.Text = "Estado Cliente";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // cbEstadoCliente
             // 
@@ -166,7 +158,6 @@
             this.cbEstadoCliente.TabIndex = 25;
             this.cbEstadoCliente.Text = "estado";
             this.cbEstadoCliente.UseVisualStyleBackColor = true;
-            this.cbEstadoCliente.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // txtNombres
             // 
@@ -174,7 +165,6 @@
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(209, 20);
             this.txtNombres.TabIndex = 26;
-            this.txtNombres.TextChanged += new System.EventHandler(this.txtNombres_TextChanged);
             // 
             // btnDeshabilitar
             // 
@@ -234,7 +224,6 @@
             this.label7.Size = new System.Drawing.Size(53, 13);
             this.label7.TabIndex = 32;
             this.label7.Text = "ID Cliente";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtidCliente
             // 
@@ -242,7 +231,6 @@
             this.txtidCliente.Name = "txtidCliente";
             this.txtidCliente.Size = new System.Drawing.Size(58, 20);
             this.txtidCliente.TabIndex = 33;
-            this.txtidCliente.TextChanged += new System.EventHandler(this.idCliente_TextChanged);
             // 
             // dgvCliente
             // 
@@ -279,7 +267,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 360);
+            this.ClientSize = new System.Drawing.Size(772, 333);
             this.Controls.Add(this.grupBoxDatos);
             this.Controls.Add(this.dgvCliente);
             this.Controls.Add(this.btnCancelar);
@@ -292,7 +280,6 @@
             this.Controls.Add(this.label1);
             this.Name = "MantenedorClientes";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.MantenedorClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             this.grupBoxDatos.ResumeLayout(false);
             this.grupBoxDatos.PerformLayout();
