@@ -16,11 +16,12 @@ namespace SistemaProduccion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MantenedorTipoPlano());
+            //Application.Run(new MantenedorTipoPlano());
             //Application.Run(new MantenedorClientes());
             //Application.Run(new MantenedorCategoriaMueble());
             //Application.Run(new RequerimientosCliente());
             //Application.Run(new OrdenPlano());
+            Application.Run(new MantenedorPlano());
         }
     }
 }

@@ -100,6 +100,9 @@
     <EmbeddedResource Include="MantenedorMuebles.resx">
       <DependentUpon>MantenedorMuebles.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorPlano.resx">
+      <DependentUpon>MantenedorPlano.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorTipoPlano.resx">
       <DependentUpon>MantenedorTipoPlano.cs</DependentUpon>
     </EmbeddedResource>

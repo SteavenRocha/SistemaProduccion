@@ -43,18 +43,18 @@
             this.cbEstado = new System.Windows.Forms.CheckBox();
             this.dtpFechaRegistro = new System.Windows.Forms.DateTimePicker();
             this.grupBoxDatos = new System.Windows.Forms.GroupBox();
+            this.dtpFechaLimite = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtOrdenPlano = new System.Windows.Forms.TextBox();
             this.dgvOrdenPlano = new System.Windows.Forms.DataGridView();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dtpFechaLimite = new System.Windows.Forms.DateTimePicker();
             this.grupBoxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrdenPlano)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(407, 90);
+            this.btnCancelar.Location = new System.Drawing.Point(628, 86);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 51;
@@ -64,7 +64,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(407, 61);
+            this.btnAgregar.Location = new System.Drawing.Point(628, 58);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 50;
@@ -74,7 +74,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(419, 120);
+            this.btnSalir.Location = new System.Drawing.Point(646, 113);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 49;
@@ -102,7 +102,7 @@
             // 
             // btnDeshabilitar
             // 
-            this.btnDeshabilitar.Location = new System.Drawing.Point(419, 54);
+            this.btnDeshabilitar.Location = new System.Drawing.Point(646, 54);
             this.btnDeshabilitar.Name = "btnDeshabilitar";
             this.btnDeshabilitar.Size = new System.Drawing.Size(75, 23);
             this.btnDeshabilitar.TabIndex = 48;
@@ -155,7 +155,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(318, 28);
+            this.label5.Location = new System.Drawing.Point(318, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 24;
@@ -195,10 +195,26 @@
             this.grupBoxDatos.Controls.Add(this.dtpFechaRegistro);
             this.grupBoxDatos.Location = new System.Drawing.Point(12, 194);
             this.grupBoxDatos.Name = "grupBoxDatos";
-            this.grupBoxDatos.Size = new System.Drawing.Size(482, 185);
+            this.grupBoxDatos.Size = new System.Drawing.Size(709, 185);
             this.grupBoxDatos.TabIndex = 53;
             this.grupBoxDatos.TabStop = false;
             this.grupBoxDatos.Text = "Datos Orden Plano";
+            // 
+            // dtpFechaLimite
+            // 
+            this.dtpFechaLimite.Location = new System.Drawing.Point(117, 159);
+            this.dtpFechaLimite.Name = "dtpFechaLimite";
+            this.dtpFechaLimite.Size = new System.Drawing.Size(209, 20);
+            this.dtpFechaLimite.TabIndex = 46;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(16, 166);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 13);
+            this.label3.TabIndex = 45;
+            this.label3.Text = "Fecha Limite";
             // 
             // txtOrdenPlano
             // 
@@ -212,13 +228,13 @@
             this.dgvOrdenPlano.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOrdenPlano.Location = new System.Drawing.Point(12, 25);
             this.dgvOrdenPlano.Name = "dgvOrdenPlano";
-            this.dgvOrdenPlano.Size = new System.Drawing.Size(401, 150);
+            this.dgvOrdenPlano.Size = new System.Drawing.Size(628, 150);
             this.dgvOrdenPlano.TabIndex = 52;
             this.dgvOrdenPlano.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrdenPlano_CellClick);
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(419, 25);
+            this.btnNuevo.Location = new System.Drawing.Point(646, 25);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 23);
             this.btnNuevo.TabIndex = 47;
@@ -226,27 +242,11 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 166);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 13);
-            this.label3.TabIndex = 45;
-            this.label3.Text = "Fecha Limite";
-            // 
-            // dtpFechaLimite
-            // 
-            this.dtpFechaLimite.Location = new System.Drawing.Point(117, 159);
-            this.dtpFechaLimite.Name = "dtpFechaLimite";
-            this.dtpFechaLimite.Size = new System.Drawing.Size(209, 20);
-            this.dtpFechaLimite.TabIndex = 46;
-            // 
             // OrdenPlano
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 391);
+            this.ClientSize = new System.Drawing.Size(731, 391);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDeshabilitar);

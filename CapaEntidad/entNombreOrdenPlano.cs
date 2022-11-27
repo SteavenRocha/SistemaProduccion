@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaDatos
+namespace CapaEntidad
 {
-    public class datPlanos
+    public class entNombreOrdenPlano
     {
+        public int OrdenPlanoID { get; set; }
     }
 }

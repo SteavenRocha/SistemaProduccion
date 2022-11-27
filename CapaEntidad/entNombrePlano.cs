@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace CapaEntidad
 {
-    public class entPlanos
+    public class entNombrePlano
     {
+        public int TipoPlanoID { get; set; }
+        public string DescripcionPlano { get; set; }
     }
 }
