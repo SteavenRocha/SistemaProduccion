@@ -107,5 +107,71 @@ namespace SistemaProduccion
             dtpFechaLimite.Text = filaActual.Cells[4].Value.ToString();
             cbEstado.Checked = Convert.ToBoolean(filaActual.Cells[5].Value);
         }
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvOrdenPlano_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void grupBoxDatos_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpFechaLimite_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIDdiseñador_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbReqCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtOrdenPlano_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbEstado_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

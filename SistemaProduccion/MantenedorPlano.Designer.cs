@@ -35,7 +35,6 @@
             this.grupBoxDatos = new System.Windows.Forms.GroupBox();
             this.cbxEstado = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbxIDordenPlano = new System.Windows.Forms.ComboBox();
             this.txtIDplano = new System.Windows.Forms.TextBox();
             this.txtIDdiseñador = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
+            this.txtOrdePlano = new System.Windows.Forms.TextBox();
             this.grupBoxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
@@ -90,9 +90,9 @@
             // 
             // grupBoxDatos
             // 
+            this.grupBoxDatos.Controls.Add(this.txtOrdePlano);
             this.grupBoxDatos.Controls.Add(this.cbxEstado);
             this.grupBoxDatos.Controls.Add(this.label5);
-            this.grupBoxDatos.Controls.Add(this.cbxIDordenPlano);
             this.grupBoxDatos.Controls.Add(this.cbxCatPlano);
             this.grupBoxDatos.Controls.Add(this.btnCancelar);
             this.grupBoxDatos.Controls.Add(this.label7);
@@ -127,14 +127,6 @@
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 47;
             this.label5.Text = "Estado";
-            // 
-            // cbxIDordenPlano
-            // 
-            this.cbxIDordenPlano.FormattingEnabled = true;
-            this.cbxIDordenPlano.Location = new System.Drawing.Point(128, 86);
-            this.cbxIDordenPlano.Name = "cbxIDordenPlano";
-            this.cbxIDordenPlano.Size = new System.Drawing.Size(143, 21);
-            this.cbxIDordenPlano.TabIndex = 44;
             // 
             // txtIDplano
             // 
@@ -246,6 +238,13 @@
             this.dgvDatos.TabIndex = 51;
             this.dgvDatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellClick_1);
             // 
+            // txtOrdePlano
+            // 
+            this.txtOrdePlano.Location = new System.Drawing.Point(128, 89);
+            this.txtOrdePlano.Name = "txtOrdePlano";
+            this.txtOrdePlano.Size = new System.Drawing.Size(58, 20);
+            this.txtOrdePlano.TabIndex = 49;
+            // 
             // MantenedorPlano
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,8 +286,8 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvDatos;
-        private System.Windows.Forms.ComboBox cbxIDordenPlano;
         private System.Windows.Forms.CheckBox cbxEstado;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtOrdePlano;
     }
 }

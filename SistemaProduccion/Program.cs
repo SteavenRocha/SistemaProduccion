@@ -21,7 +21,8 @@ namespace SistemaProduccion
             //Application.Run(new MantenedorCategoriaMueble());
             //Application.Run(new RequerimientosCliente());
             //Application.Run(new OrdenPlano());
-            Application.Run(new MantenedorPlano());
+            //Application.Run(new MantenedorPlano());
+            Application.Run(new OrdenPlanificacion());
         }
     }
 }

@@ -77,14 +77,38 @@
     <Compile Include="MantenedorTipoPlano.Designer.cs">
       <DependentUpon>MantenedorTipoPlano.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrdenIngresoPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenIngresoPT.Designer.cs">
+      <DependentUpon>OrdenIngresoPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenPlanificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenPlanificacion.Designer.cs">
+      <DependentUpon>OrdenPlanificacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrdenPlano.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OrdenPlano.Designer.cs">
       <DependentUpon>OrdenPlano.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrdenProduccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenProduccion.Designer.cs">
+      <DependentUpon>OrdenProduccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequerimientoMateriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequerimientoMateriales.Designer.cs">
+      <DependentUpon>RequerimientoMateriales.cs</DependentUpon>
+    </Compile>
     <Compile Include="RequerimientosCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorTipoPlano.resx">
       <DependentUpon>MantenedorTipoPlano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenPlanificacion.resx">
+      <DependentUpon>OrdenPlanificacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdenPlano.resx">
       <DependentUpon>OrdenPlano.cs</DependentUpon>

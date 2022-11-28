@@ -21,14 +21,15 @@ namespace SistemaProduccion
             grupBoxDatos.Enabled = false;
             txtIDplano.Enabled = false;
             listarNombrePlano();
-            listarNombreOrdenPlano();
+           // listarNombreOrdenPlano();
         }
 
-        private void listarNombreOrdenPlano()
+        /*private void listarNombreOrdenPlano()
         {
             cbxIDordenPlano.DataSource = logNombreOrdenPlano.Instancia.ListarNombreOrdenPlano().ToList();
             cbxIDordenPlano.DisplayMember = "TipoPlanoID";
-        }
+            //cbxIDordenPlano.ValueMember = "TipoPlanoID";
+        }*/
 
         public void listarMantenedorPlano()
         {
@@ -55,7 +56,7 @@ namespace SistemaProduccion
         {
             txtIDplano.Text = "";
             txtIDdiseñador.Text = " ";
-            cbxIDordenPlano.Text = " ";
+            txtOrdePlano.Text = " ";
             cbxCatPlano.Text = " ";
             //cbkEstadoCliente.Checked = false;
 
@@ -85,7 +86,7 @@ namespace SistemaProduccion
                 entPlano c = new entPlano();
                 c.PlanoID = int.Parse(txtIDplano.Text.Trim());
                 c.IDdiseñador = int.Parse(txtIDdiseñador.Text.Trim());
-               // c.OrdenPlanoID = int.Parse(txtOrdenPlano.Text.Trim());
+                c.OrdenPlanoID = int.Parse(txtOrdePlano.Text.Trim());
                 //c.TipoID = int.Parse(txtCategoriaPlano.Text.Trim());
                 c.estaPlano = cbxEstado.Checked;
                 logPlano.Instancia.EditaPlano(c);
@@ -106,9 +107,9 @@ namespace SistemaProduccion
             {
                 entPlano c = new entPlano();
                 c.IDdiseñador = int.Parse(txtIDdiseñador.Text.Trim());
-                //c.OrdenPlanoID = int.Parse(txtOrdenPlano.Text.Trim());
+                c.OrdenPlanoID = int.Parse(txtOrdePlano.Text.Trim());
                 //c.TipoID = int.Parse(txtCategoriaPlano.Text.Trim());
-                c.OrdenPlanoID = Convert.ToInt32(cbxIDordenPlano.SelectedValue);
+                //c.OrdenPlanoID = Convert.ToInt32(cbxIDordenPlano.SelectedValue);
                 c.TipoID = Convert.ToInt32(cbxCatPlano.SelectedValue);
                 c.estaPlano = cbxEstado.Checked;
                 logPlano.Instancia.InsertaPlano(c);
@@ -127,9 +128,9 @@ namespace SistemaProduccion
             DataGridViewRow filaActual = dgvDatos.Rows[e.RowIndex]; //
             txtIDplano.Text = filaActual.Cells[0].Value.ToString();
             txtIDdiseñador.Text = filaActual.Cells[1].Value.ToString();
-            // txtOrdenPlano.Text = filaActual.Cells[2].Value.ToString();
+            txtOrdePlano.Text = filaActual.Cells[2].Value.ToString();
             //txtCategoriaPlano.Text = filaActual.Cells[3].Value.ToString();
-            cbxIDordenPlano.Text = filaActual.Cells[2].Value.ToString();
+            //cbxIDordenPlano.Text = filaActual.Cells[2].Value.ToString();
             cbxCatPlano.Text = filaActual.Cells[3].Value.ToString();
             cbxEstado.Checked = Convert.ToBoolean(filaActual.Cells[4].Value);
         }

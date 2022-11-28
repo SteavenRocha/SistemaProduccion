@@ -90,6 +90,7 @@
             this.label1.Size = new System.Drawing.Size(85, 13);
             this.label1.TabIndex = 46;
             this.label1.Text = "ORDEN PLANO";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -99,6 +100,7 @@
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 43;
             this.label2.Text = "ID Req. Cliente";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnDeshabilitar
             // 
@@ -117,6 +119,7 @@
             this.cmbReqCliente.Name = "cmbReqCliente";
             this.cmbReqCliente.Size = new System.Drawing.Size(149, 21);
             this.cmbReqCliente.TabIndex = 44;
+            this.cmbReqCliente.SelectedIndexChanged += new System.EventHandler(this.cmbReqCliente_SelectedIndexChanged);
             // 
             // txtIDdiseñador
             // 
@@ -124,6 +127,7 @@
             this.txtIDdiseñador.Name = "txtIDdiseñador";
             this.txtIDdiseñador.Size = new System.Drawing.Size(58, 20);
             this.txtIDdiseñador.TabIndex = 37;
+            this.txtIDdiseñador.TextChanged += new System.EventHandler(this.txtIDdiseñador_TextChanged);
             // 
             // label8
             // 
@@ -133,6 +137,7 @@
             this.label8.Size = new System.Drawing.Size(91, 13);
             this.label8.TabIndex = 35;
             this.label8.Text = "Codigo Diseñador";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -142,6 +147,7 @@
             this.label7.Size = new System.Drawing.Size(80, 13);
             this.label7.TabIndex = 32;
             this.label7.Text = "ID Orden Plano";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -160,6 +166,7 @@
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 24;
             this.label5.Text = "Estado";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // cbEstado
             // 
@@ -169,6 +176,7 @@
             this.cbEstado.Size = new System.Drawing.Size(15, 14);
             this.cbEstado.TabIndex = 25;
             this.cbEstado.UseVisualStyleBackColor = true;
+            this.cbEstado.CheckedChanged += new System.EventHandler(this.cbEstado_CheckedChanged);
             // 
             // dtpFechaRegistro
             // 
@@ -199,6 +207,7 @@
             this.grupBoxDatos.TabIndex = 53;
             this.grupBoxDatos.TabStop = false;
             this.grupBoxDatos.Text = "Datos Orden Plano";
+            this.grupBoxDatos.Enter += new System.EventHandler(this.grupBoxDatos_Enter);
             // 
             // dtpFechaLimite
             // 
@@ -206,6 +215,7 @@
             this.dtpFechaLimite.Name = "dtpFechaLimite";
             this.dtpFechaLimite.Size = new System.Drawing.Size(209, 20);
             this.dtpFechaLimite.TabIndex = 46;
+            this.dtpFechaLimite.ValueChanged += new System.EventHandler(this.dtpFechaLimite_ValueChanged);
             // 
             // label3
             // 
@@ -215,6 +225,7 @@
             this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 45;
             this.label3.Text = "Fecha Limite";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtOrdenPlano
             // 
@@ -222,6 +233,7 @@
             this.txtOrdenPlano.Name = "txtOrdenPlano";
             this.txtOrdenPlano.Size = new System.Drawing.Size(58, 20);
             this.txtOrdenPlano.TabIndex = 33;
+            this.txtOrdenPlano.TextChanged += new System.EventHandler(this.txtOrdenPlano_TextChanged);
             // 
             // dgvOrdenPlano
             // 
@@ -231,6 +243,7 @@
             this.dgvOrdenPlano.Size = new System.Drawing.Size(628, 150);
             this.dgvOrdenPlano.TabIndex = 52;
             this.dgvOrdenPlano.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrdenPlano_CellClick);
+            this.dgvOrdenPlano.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrdenPlano_CellContentClick);
             // 
             // btnNuevo
             // 
