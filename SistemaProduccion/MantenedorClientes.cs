@@ -65,7 +65,6 @@ namespace SistemaProduccion
             txtNombres.Text = " ";
             txtidCliente.Text = " ";
             //cbkEstadoCliente.Checked = false;
-
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

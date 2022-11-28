@@ -46,6 +46,7 @@
     <Compile Include="entCliente.cs" />
     <Compile Include="entMueble.cs" />
     <Compile Include="entNombreCliente.cs" />
+    <Compile Include="entNombreMueble.cs" />
     <Compile Include="entNombreOrdenPlano.cs" />
     <Compile Include="entNombrePlano.cs" />
     <Compile Include="entOrdenIngresoPT.cs" />
