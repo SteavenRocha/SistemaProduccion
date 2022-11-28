@@ -12,10 +12,9 @@ namespace CapaDatos
     public class datCliente
     {
         #region sigleton
-        //Patron Singleton
-        // Variable estática para la instancia
+      
         private static readonly datCliente _instancia = new datCliente();
-        //privado para evitar la instanciación directa
+
         public static datCliente Instancia
         {
             get
@@ -26,14 +25,14 @@ namespace CapaDatos
         #endregion singleton
 
         #region metodos
-        ////////////////////listado de Clientes
+        //listado 
         public List<entCliente> ListarCliente()
         {
             SqlCommand cmd = null;
             List<entCliente> lista = new List<entCliente>();
             try
             {
-                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                SqlConnection cn = Conexion.Instancia.Conectar(); 
                 cmd = new SqlCommand("spListaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
@@ -61,7 +60,7 @@ namespace CapaDatos
             }
             return lista;
         }
-        /////////////////////////InsertaCliente
+        //Inserta
         public Boolean InsertarCliente(entCliente Cli)
         {
             SqlCommand cmd = null;
@@ -92,7 +91,7 @@ namespace CapaDatos
         }
 
 
-        //////////////////////////////////EditaCliente
+        //Edita
         public Boolean EditarCliente(entCliente Cli)
         {
             SqlCommand cmd = null;
@@ -123,7 +122,7 @@ namespace CapaDatos
             return edita;
         }
 
-        //deshabilitaCliente
+        //deshabilita
 
         public Boolean DeshabilitarCliente(entCliente Cli)
         {

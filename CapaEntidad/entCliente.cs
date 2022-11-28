@@ -12,8 +12,7 @@ namespace CapaEntidad
         public string DNICliente { get; set; }
         public string Ntelefono { get; set; }
         public DateTime fecRegCliente { get; set; }
-        public string nombresCompletos { get; set; }      /// public entCiudad Ciudad{ get; set; }
-
+        public string nombresCompletos { get; set; }     
         public Boolean estadoCliente { get; set; }
 
     }

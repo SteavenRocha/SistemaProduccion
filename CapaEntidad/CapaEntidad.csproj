@@ -52,6 +52,7 @@
     <Compile Include="entOrdenPlano.cs" />
     <Compile Include="entPlano.cs" />
     <Compile Include="entReqCliente.cs" />
+    <Compile Include="entRequerimientoMateriales.cs" />
     <Compile Include="entRequerimientosClientes.cs" />
     <Compile Include="entTipoPlano.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

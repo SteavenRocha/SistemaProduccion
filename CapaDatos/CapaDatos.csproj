@@ -52,6 +52,7 @@
     <Compile Include="datOrdenPlano.cs" />
     <Compile Include="datPlano.cs" />
     <Compile Include="datReqCliente.cs" />
+    <Compile Include="datRequerimientoMateriales.cs" />
     <Compile Include="datRequerimientosCliente.cs" />
     <Compile Include="datTipoPlano.cs" />
     <Compile Include="datNombreOrdenPlano.cs" />

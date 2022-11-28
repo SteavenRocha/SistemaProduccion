@@ -145,6 +145,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RequerimientoMateriales.resx">
+      <DependentUpon>RequerimientoMateriales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RequerimientosCliente.resx">
       <DependentUpon>RequerimientosCliente.cs</DependentUpon>
     </EmbeddedResource>

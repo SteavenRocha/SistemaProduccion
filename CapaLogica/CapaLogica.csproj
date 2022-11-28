@@ -52,6 +52,7 @@
     <Compile Include="logOrdenPlano.cs" />
     <Compile Include="logPlano.cs" />
     <Compile Include="logReqCliente.cs" />
+    <Compile Include="logRequerimientoMateriales.cs" />
     <Compile Include="logRequerimientosClientes.cs" />
     <Compile Include="LogTipoPlano.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
