@@ -136,6 +136,9 @@
     <EmbeddedResource Include="OrdenPlano.resx">
       <DependentUpon>OrdenPlano.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrdenProduccion.resx">
+      <DependentUpon>OrdenProduccion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

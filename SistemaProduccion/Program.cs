@@ -23,7 +23,8 @@ namespace SistemaProduccion
             //Application.Run(new OrdenPlano());
             //Application.Run(new MantenedorPlano());
             //Application.Run(new OrdenPlanificacion());
-            Application.Run(new RequerimientoMateriales());
+            //Application.Run(new RequerimientoMateriales());
+            Application.Run(new OrdenProduccion());
         }
     }
 }
