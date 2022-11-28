@@ -48,6 +48,7 @@
     <Compile Include="entNombreCliente.cs" />
     <Compile Include="entNombreOrdenPlano.cs" />
     <Compile Include="entNombrePlano.cs" />
+    <Compile Include="entOrdenIngresoPT.cs" />
     <Compile Include="entOrdenPlanificacion.cs" />
     <Compile Include="entOrdenPlano.cs" />
     <Compile Include="entOrdenProduccion.cs" />

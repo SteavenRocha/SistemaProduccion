@@ -48,6 +48,7 @@
     <Compile Include="datMueble.cs" />
     <Compile Include="datNombreCliente.cs" />
     <Compile Include="datNombrePlano.cs" />
+    <Compile Include="datOrdenIngresoPT.cs" />
     <Compile Include="datOrdenPlanificacion.cs" />
     <Compile Include="datOrdenPlano.cs" />
     <Compile Include="datOrdenProduccion.cs" />

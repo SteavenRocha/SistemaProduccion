@@ -130,6 +130,9 @@
     <EmbeddedResource Include="MantenedorTipoPlano.resx">
       <DependentUpon>MantenedorTipoPlano.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrdenIngresoPT.resx">
+      <DependentUpon>OrdenIngresoPT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OrdenPlanificacion.resx">
       <DependentUpon>OrdenPlanificacion.cs</DependentUpon>
     </EmbeddedResource>
