@@ -26,7 +26,8 @@ namespace SistemaProduccion
             //Application.Run(new RequerimientoMateriales());
             //Application.Run(new OrdenProduccion());
             //Application.Run(new OrdenIngresoPT());
-            Application.Run(new MantenedorMuebles());
+            //Application.Run(new MantenedorMuebles());
+            Application.Run(new MenuPrincipal());
         }
     }
 }

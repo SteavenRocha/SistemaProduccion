@@ -77,6 +77,12 @@
     <Compile Include="MantenedorTipoPlano.Designer.cs">
       <DependentUpon>MantenedorTipoPlano.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrdenIngresoPT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorTipoPlano.resx">
       <DependentUpon>MantenedorTipoPlano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdenIngresoPT.resx">
       <DependentUpon>OrdenIngresoPT.cs</DependentUpon>
